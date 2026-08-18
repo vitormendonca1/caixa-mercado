@@ -1,5 +1,4 @@
 estoque = {}
-
 def adcionar_produto(estoque):
     print("Adcionar Produto!")
     produto = str(input("Digite o nome do produto: "))
@@ -66,8 +65,8 @@ def buscar_produto (estoque):
     if buscar not in estoque:
         print("Produto fora de estoque!")
     else:
-      mostrar =  estoque[buscar]["Quantidade"]
-      print(f"Produto: {buscar} | Quantidade: {mostrar}")
+        mostrar =  estoque[buscar]["Quantidade"]
+    print(f"Produto: {buscar} | Quantidade: {mostrar}")
 
 while True:
     opcoes = [print("1 - Adicionar produto"),
@@ -90,6 +89,9 @@ while True:
         buscar_produto(estoque)
 
     elif opcao == "6":
+        print("Saindo...")
         break
-    elif opcao not in opcoes:
-        print("Opção Invalida")
+    else:
+        print("Opcao Invalida!")
+                
+                

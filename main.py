@@ -1,3 +1,7 @@
+from opercacoes import adicionar,atualizar_produto,remover
+from visualizacao import buscar,listar_produto
+
+
 estoque = {}
 while True:
     opcoes = [print("1 - Adicionar produto"),
@@ -9,15 +13,15 @@ while True:
     opcao = input("Digite a opção desejada: ")
 
     if opcao == "1":
-        adcionar_produto(estoque)
+        adicionar.adcionar_produto(estoque)
     elif opcao == "2":
-        remover_produto(estoque)
+        remover.remover_produto(estoque)
     elif opcao == "3":
-        atualizar(estoque)
+        atualizar_produto.atualizar(estoque)
     elif opcao == "4":
-        listar(estoque)
+        listar_produto.listar(estoque)
     elif opcao == "5":
-        buscar_produto(estoque)
+        buscar.buscar_produto(estoque)
 
     elif opcao == "6":
         break
